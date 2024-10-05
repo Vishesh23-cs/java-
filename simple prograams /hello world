@@ -1,0 +1,22 @@
+
+/**  Java Program to Print Hello World on Screen
+  example 1
+  */
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+ 
+
+/**
+ * Java Program to Print "Hello World" 10 times using for loop
+*/
+public class HelloWorld {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Hello World");
+        }
+    }
+}
+ 
