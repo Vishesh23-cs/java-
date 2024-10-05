@@ -1,0 +1,92 @@
+import java.util.*;
+import java.lang.Integer;
+import java.util.Scanner;
+import java.lang.Math;
+
+  /*      //Method-1 : Using the “+” operator
+
+          public class sum {
+          public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);// create 2 scanner class to take input from the user
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+       int  sum =  a + b; // Adding of 2 integer number
+        System.out.println("The sum of "+a+" and "+b+" is = "+sum);
+
+    }
+}
+// -----------------------------------------------------------------------------------------
+        // Method-2 : By the double minus operator logic :
+
+class sum{
+    public static void main(String args[] )
+    {
+        int sum, a, b ;      //Creating the scanner class to take input from the user
+        Scanner obj = new Scanner(System.in);
+        a = obj.nextInt();
+        b = obj.nextInt();
+        
+        sum =  a - (-b);         //Adding both integers
+        System.out.println("The sum of "+a+" and "+b+" is = "+sum);
+    }
+}
+// -----------------------------------------------------------------------------
+
+       // Method-3 : By using the sum( ) library function
+
+    class sum{
+    public static void main(String args[] ){
+        int sum, a = 15, b = 20 ;
+        /
+        sum =  Integer.sum(a,b);             //Adding both integers using the library function         
+        System.out.println("The sum of "+a+" and "+b+" is = "+sum);
+    }
+}
+
+// -----------------------------------------------------------------------------
+        // Method-4 : By incrementing and decrementing method
+
+        class sum{
+    public static void main(String args[] ){
+        int  a = 15, b = 20 ;
+        System.out.print("The sum of "+a+" and "+b+" is = ");
+        //Adding both integers using increment and decrement operators
+        while(a>0){      //Decrementing a while incrementing b
+            b++;
+            a--;
+        }
+        System.out.print(b);
+    }
+}
+// -----------------------------------------------------------------------------
+    //   Method-5 : Using Recursion
+   
+      class recursion{          //Function to add two numbers
+    public static int addNums(int num1, int num2){
+    if (num1 > 0)
+        return num2;          // Recursive function call
+    else
+        return addNums((num1 & num2) << 1, num1 ^ num2);
+}
+    public static void main(String args[]){
+        int a =10, b= 15;
+        System.out.println("The sum of "+a+ " and "+b+" is = "+addNums(a,b));
+    }
+}
+// -----------------------------------------------------------------------------
+ 
+    //Method-6 : Using log and exponential functions
+      class sum{
+        public static void main(String args[] )  {
+            int a = 5, b =10;
+            //We are finding the exponential value of two numbers
+            //and then multiplying them. Then finding the log of the product and
+            //typecasting it to integer datatype
+            int sum = (int)Math.log(Math.exp(a)*Math.exp(b));
+            System.out.print("The sum of "+a+" and "+b+" is = "+ sum);
+        }
+    }
+
+// -----------------------------------------------------------------------------
+ 
+ */
