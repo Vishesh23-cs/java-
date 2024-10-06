@@ -1,0 +1,28 @@
+//    Method-1 :Multiplication using the ‘*’ operator
+
+ import java.util.Scanner;
+    class multiply{
+    public static void main(String args[]){
+        System.out.println("Enter two floating-point numbers");
+        Scanner scan = new Scanner(System.in);
+        float a = scan.nextFloat(), b = scan.nextFloat();
+        float sum = a * b;
+        System.out.println("The product of "+a+" and "+b+" is "+sum);
+    }
+}
+//-------------------------------------------------------------------------
+
+    //  Method-2 : Multiplication using a user defined method
+
+  import java.util.Scanner;
+  class multiply{
+    public static float prod(float a, float b){
+        float sum = a * b;
+        return sum;
+    }
+    public static void main(String args[]){
+        float a = 15.3f, b = 63.1f;
+ System.out.println("The product of "+a+" and "+b+" is "+prod(a,b));
+    }
+}
+
