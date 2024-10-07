@@ -1,0 +1,78 @@
+//Method-I :- Swap two values of numbers by using a third variable
+public class SwapTwoNumbers {
+    public static void main(String[] args)
+    {
+
+        int a = 58, b = 72;
+        System.out.println("--Before swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("\n\n--After swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+    }
+}
+
+//------------------------------------------------------------------------
+
+//Method-II :- Swap two numbers by taking inputs from user
+
+import java.util.Scanner;
+class SwapTwoNumbers {
+    public static void main(String args[])
+    {
+        int a,b,temp;
+        System.out.println("Enter any two numbers : ");
+        Scanner sc = new Scanner(System.in);
+
+        a = sc.nextInt();
+        b = sc.nextInt();
+        System.out.println("--Before swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+        temp = a;
+        a = b;
+        b = temp;
+        System.out.println("--After swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+    }
+}
+//-----------------------------------------------------------------------
+//Method-III:- Swap two numbers without using a third variable
+
+class SwapTwoNumbers {
+    public static void main(String args[]) {
+        int a = 29;
+        int b = 65;
+        System.out.println("--Before swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+        a= a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("\n\n--After swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+    }
+}
+//-----------------------------------------------------------------------
+//Method IV:- Swap values of two numbers using Bitwise XOR
+class SwapTwoNumbers {
+    public static void main(String args[]) {
+        int a = 6;
+        int b = 13;
+        System.out.println("--Before swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+        a = a ^ b;
+        b = a ^ b; 
+        System.out.println("\n\n--After swapping--");
+        System.out.println("First number = " + a);
+        System.out.println("Second number = " + b);
+
+    }
+}
