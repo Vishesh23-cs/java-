@@ -1,0 +1,88 @@
+//Method-1 : Using modulo(%) operator
+
+import java.util.*;
+class Check {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num=sc.nextInt();
+        int rem=num%2;
+        if(rem==0) {
+            System.out.println("Even number");
+        }
+        else {
+            System.out.println("Odd number");
+        }
+    }
+}
+//----------------------------------------------------------------
+
+//Method-2 : Using division(/) operator
+
+import java.util.*;
+class Check {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num=sc.nextInt();
+        if((num/2) * 2==num) {
+            System.out.println("Even number");
+        }
+        else {
+            System.out.println("Odd number");
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+
+//Method-3 : Using ternary operator
+
+import java.util.*;
+class Check { 
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num=sc.nextInt();
+        String res=(num%2==0) ? "Even number":"Odd number";
+        System.out.println(res);
+    }
+}
+
+//---------------------------------------------------------
+
+//Method-4 : Using Bit wise AND(&) operator
+
+import java.util.*;
+class Check {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num=sc.nextInt();
+        if ((num & 1) == 1) {
+            System.out.println("Odd number");
+        }
+        else {
+            System.out.println("Even number");
+        }
+    }
+}
+
+//-------------------------------------------------------------
+
+//Method-5 : Using Bit wise OR(|) operator
+
+import java.util.*;
+class Check {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num=sc.nextInt();
+        if ((num | 1) > num) {
+            System.out.println("Even number");
+        }
+        else {
+            System.out.println("Odd number");
+        }
+    }
+}
