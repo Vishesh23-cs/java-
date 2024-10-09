@@ -1,0 +1,14 @@
+//Program to Find the Frequency of Character in a String
+public class Frequency_Of_Characte {
+    public static void main(String[] args) {
+        String value  = "hello i am vishesh studying in GLA University ";
+        char ch = 'v';
+        int character  = 0;
+        for(int i = 0; i < value.length(); i++) {
+            if(ch == value.charAt(i)) {
+                character++;
+            }
+        }
+        System.out.println("Frequency of " + ch + " = " + character);
+    }
+}
