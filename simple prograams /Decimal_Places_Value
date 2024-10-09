@@ -1,0 +1,64 @@
+//  Method 1 :to round the number to n decimal places by using formatting approach
+/*
+import java.util.Scanner;
+public class Decimal_Places_Value {
+    public static void main(String[] args) {
+        // CREATING OBJECT
+        Scanner sc = new Scanner(System.in);
+        // TAKING STRING FORM USER
+        System.out.println("Enter number: ");
+        double n= sc.nextDouble();
+        // rounding number to 2 decimal places
+        System.out.println("number: " + n);
+        System.out.format("\n after rounding : %.3f", n);
+    }
+}
+//-------------------------------------------------------------------------
+
+
+
+// Method 2 : Java program to round the number to n decimal places DecimalFormat class
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class Decimal_Places_Value {
+    public static void main(String[] args)
+    {
+        // CREATING OBJECT
+        Scanner sc = new Scanner(System.in);
+        // TAKING STRING FORM USER
+        System.out.print("Enter number: ");
+        double n= sc.nextDouble();
+        //creating obj. of the DecimalFormat
+        DecimalFormat D = new DecimalFormat("#.####");
+        System.out.print("number: " + n);
+        System.out.print("\nafter rounding : " + D.format(n));
+    }
+}
+
+ //-----------------------------------------------------------------------------
+
+//Method 3 : to round the number to n decimal places using BigDecimal class
+
+import java.math.RoundingMode;
+import java.util.Scanner;
+import java.math.BigDecimal;
+public class Decimal_Places_Value {
+    public static void main(String[] args) {
+        // CREATING OBJECT
+        Scanner sc = new Scanner(System.in);
+        // TAKING STRING FORM USER
+        System.out.print("Enter number: ");
+        double n= sc.nextDouble();
+        System.out.print("Enter how many places you want : ");
+        int a= sc.nextInt();
+        //creating obj. of the bigdecimal
+        BigDecimal bd = new BigDecimal(Double.toString(n));
+        // rounding the value to desire n places
+        bd = bd.setScale(a, RoundingMode.HALF_UP);
+        System.out.print("number: " + n);
+        System.out.print("\nafter rounding : " + bd);
+    }
+}
+
+ */
