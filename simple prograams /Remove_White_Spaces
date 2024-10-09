@@ -1,0 +1,70 @@
+//     to remove white spaces from String
+
+/*
+import java.util.Scanner;
+public class Remove_White_Spaces {
+
+    public static void main(String[] args)
+    {
+        // CREATING OBJECT
+        Scanner sc = new Scanner(System.in);
+        // TAKING INPUT  FORM USER THAT USER CAN WANT
+        System.out.print("Enter a string : ");
+        String s= sc.nextLine();
+        // CONVERTING TO CHAR. ARRAY
+        char[] s1 = s.toCharArray();
+        // CREATING A NEW BUFFER
+        StringBuffer s2 = new StringBuffer(); // FOR WHITE SPACEING
+        // CHECKING EACH CHARACTER OF CHAR. ARRAY FOR WHITE SPACE
+        for (int x= 0; x < s1.length; x++)
+            if ((s1[x] != ' ') && (s1[x] != '\t'))
+                // APPENDING ONLY CHARACTER TO BUFFER
+                s2.append(s1[x]);
+        // CONVERTING BUFFER TO STING
+        String str = s2.toString();
+        // PRINTING THE WHITE SPACE ELEMINATED STRING
+        System.out.println("After Eliminating Space Sting Is : " + str);
+    }
+}
+
+//---------------------------------------------------------------------------------
+//  Method 2  : to remove white spaces using replaceAll() method\
+
+import java.util.Scanner;
+public class Remove_White_Spaces {
+    public static void main(String[] args)
+    {
+        // CREATING OBJECT
+        Scanner sc = new Scanner(System.in);
+        // TAKING INPUT STRING FORM USER
+        System.out.print("Enter a string : ");
+        String s= sc.nextLine();
+        // USING OF PRE-DEFINED METHOD
+        // WHITE SPACES REMOVED USING REGEX
+        String str = s.replaceAll("\\s+", "");
+        // PRINTING THE WHITE SPACE ELEMINATED STRING
+        System.out.println("After remove White Space Sting Is : " + str);
+    }
+}
+//----------------------------------------------------------------------------
+ 
+
+// Method 3 :to remove white spaces using replace() method
+
+import java.util.Scanner;
+public class Remove_White_Spaces {
+    public static void main(String[] args)
+    {
+        // CREATING OBJECT
+        Scanner sc = new Scanner(System.in);
+        // TAKING INPUT STRING FORM USER
+        System.out.print("Enter a string : ");
+        String s= sc.nextLine();
+        // USING OF PRE-DEFINED BUILTIN METHOD FROM USER
+        String str = s.replace (" ", "");
+        // PRINTING THE WHITE SPACE STRING
+        System.out.println("After Using Space Sting Is : " + str);
+    }
+}
+
+ */
