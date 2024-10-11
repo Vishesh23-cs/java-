@@ -1,0 +1,65 @@
+//Example-1: Checking null string
+
+import java.util.Scanner;
+public class Checking_String {
+    public static void main(String[] args) {
+        String str = null ;    //declare a string.
+
+        if (str == null)      // check string
+            System.out.println("String is "+"NULL");
+        else if(str.isEmpty())
+            System.out.println("String is "+ "empty");
+        else
+            System.out.println("String containing somthing !!!");
+    }
+}
+//------------------------------------------------------------------
+
+
+
+//         Example-2 : Checking a string static input
+
+
+public class Checking_String {
+    public static void main(String[] args) {
+        String s1= "Vishesh kumar";
+        if(s1 .isEmpty())
+            System.out.println("String is "+ "empty");
+        else
+            System.out.println("String containing somthing !!!");
+
+        String s2= "  ";
+        if(s2 .isEmpty())
+            System.out.println("String is "+ "empty");
+        else
+            System.out.println("String containing somthing !!!");
+            String s3= "";
+        if(s3 .isEmpty())
+            System.out.println("String is "+ "empty");
+        else
+            System.out.println("String containing somthing !!!");
+    }
+}
+
+//--------------------------------------------------------------------------
+
+//Example-3 : Checking an empty string by user input
+
+public class Checking_String {
+    public static void main(String[] args){
+        // CREATING OBJECT
+        Scanner sc = new Scanner(System.in);
+        // TAKING STRING FORM USER
+        System.out.print("Enter string: ");
+        String s= sc.nextLine();
+        // checking string
+        if (s == null)
+            System.out.println("String is "+"NULL");
+        else if(s .isEmpty())
+            System.out.println("String is "+ "empty");
+        else
+            System.out.println("String containing somthing !!!");
+    }
+}
+
+
