@@ -1,0 +1,41 @@
+
+//       Method-1 : Using if-else statement (Static Input)
+
+public class NumberCheck {
+    public static void main(String[] args) {
+        int num=111;
+        if(num > 0) {
+            System.out.println(num+" is a positive number");
+        }
+        else if(num < 0) {
+            System.out.println(num+" is a negative number");
+        }
+        else {
+            System.out.println(num+" is neither positive nor negative");
+        }
+    }
+}
+
+
+//---------------------------------------------------------------------------------
+
+//        Method-2 : Using if-else statement (Dynamic Input)
+
+import java .util.*;
+
+public class NumberCheck {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Please enter a number");
+        int num=sc.nextInt();
+        if(num > 0) {
+            System.out.println(num+" is a positive number");
+        }
+        else if(num < 0) {
+            System.out.println(num+" is a negative number");
+        }
+        else {
+            System.out.println(num+" is neither positive nor negative");
+        }
+    }
+}
